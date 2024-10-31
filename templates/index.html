@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> {% block title %} Flask {% endblock %} | Made in Flask</title>
+        <link rel='stylesheet' href='{{url_for("static", filename="css/styles.css")}}'/>       
+</head> 
+ <body>
+    <header>     
+    </header>
+    <div class="pagination">
+
+        <!-- for the prev button -->
+        {% if page != 1%}
+            <button class="page-btn" onclick="window.location.href='{{ url_for('index',page=page-1) }}'">Prev</button>
+        {% endif %}
+       
+       
+        <!-- for the pagination  -->
+        {% for pag in range(start, end+1) %}
+            <button class="page-btn{% if pag == page %}page_active{% endif %}" onclick="window.location.href='{{ url_for('index',page=pag) }}'">{{pag}}</button>
+        {% endfor %}
+
+        <!-- for the next button -->
+        {% if page != pages%}
+        <button class="page-btn" onclick="window.location.href='{{ url_for('index',page=page+1) }}'">Next</button>
+        {% endif %}
+
+
+    </div>
+         
+    <footer > 
+    </footer> 
+</body>
+
+</html>

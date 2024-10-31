@@ -1,0 +1,33 @@
+/* Body's general configuration */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #555;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.page-btn {
+    padding: 8px 16px;
+    color: #333;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.page-btn.page_active {
+    background-color: #114379; 
+    color: #fff;               
+}
+.page-btn:hover {
+    background-color: #ddd;
+}
