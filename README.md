@@ -31,3 +31,14 @@ html
 1. "Prev" Button: Displays "Prev" only if not on the first page.
 2. Numbered Buttons: Displays buttons within the [start, end] range and applies the page_active class to the button for the current page.
 3. "Next" Button: Displays "Next" only if not on the last page.
+
+## Views (Example)
+ 1. **Firts view.** <br>
+ in first page. <br>
+    ![First Page](views/first.png "First Page")
+ 2. **Second view.** <br>
+ in second page. <br>
+    ![Main Page](views/second.png "Second Page")
+ 3. **Third view.** <br>
+ throught the pages. <br>
+    ![Main Page](views/third.png "Trhought Pages")
